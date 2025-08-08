@@ -5,7 +5,7 @@ const { SHELL, EDITOR } = process.env;
 console.log(SHELL);
 console.log(EDITOR);
 
-const character = ['flash', 'superman', 'Green Lanter','Batman']
+export const character = [ 'Flash', 'Superman','Green Lanter','Batman']
 
 const [ , , batman] = character;
 console.log(batman);
