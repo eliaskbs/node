@@ -1,0 +1,45 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "src", // Carpeta donde están los archivos .ts
+    "outDir": "dist", // Carpeta donde se compilan los archivos .js
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "esnext", // Sistema de módulos ES más moderno
+    "target": "es2022", // Versión de JavaScript a la que compilar
+    "types": ["node"], // Tipos de TypeScript para Node.js
+    "lib": ["es2022"], // Librerías de JavaScript disponibles
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true, // Genera archivos .map para debugging
+    "declaration": true, // Genera archivos .d.ts (definiciones de tipos)
+    "declarationMap": true, // Genera mapas para las declaraciones
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true, // Requiere verificar índices de arrays
+    "exactOptionalPropertyTypes": true, // Tipos opcionales más estrictos
+
+    // Style Options
+    // "noImplicitReturns": true, // Error si función no retorna en todos los caminos
+    // "noImplicitOverride": true, // Requiere 'override' en métodos sobrescritos
+    // "noUnusedLocals": true, // Error si hay variables no usadas
+    // "noUnusedParameters": true, // Error si hay parámetros no usados
+    // "noFallthroughCasesInSwitch": true, // Error en switch sin break
+    // "noPropertyAccessFromIndexSignature": true, // Requiere notación de corchetes
+
+    // Recommended Options
+    "strict": true, // Habilita todas las verificaciones estrictas
+    "verbatimModuleSyntax": true, // Sintaxis de módulos exacta
+    "isolatedModules": true, // Cada archivo debe compilar independientemente
+    "noUncheckedSideEffectImports": true, // Verifica imports con efectos secundarios
+    "moduleDetection": "force", // Fuerza detección de módulos
+    "skipLibCheck": true, // Omite verificación de archivos .d.ts
+    "moduleResolution": "bundler", // Resolución de módulos para bundlers modernos
+  }
+}

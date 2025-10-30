@@ -5,7 +5,13 @@ export const httpClientPlugin = {
         const { data } = await axios.get( url );
         return await data;
     },
-    post: async(url: string, body: any) => {},
-    put: async(url: string, body: any) => {},
-    delete:  async(url: string, body: any ) => {},
+    post: async(url: string, body: any) => {
+        throw new Error('Not implement');
+    },
+    put: async(url: string, body: any) => {
+        throw new Error('Not implement');
+    },
+    delete:  async(url: string, body: any ) => {
+        throw new Error('Not implement');
+    },
 };
